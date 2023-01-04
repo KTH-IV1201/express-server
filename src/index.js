@@ -7,9 +7,6 @@ app.get('/', (req, res) => {
 });
 app.get('/cors', (req, res) => {
   res.set('Access-Control-Allow-Origin', 'https://iv1201-cors-client.herokuapp.com');
-  // res.set('Access-Control-Allow-Origin', '*');
-  res.set('Access-Control-Allow-Methods', '*');
-  res.set('Access-Control-Allow-Headers', '*');
   res.send({result: 'This has CORS enabled'});
 });
 app.listen(PORT, () => {
